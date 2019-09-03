@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Card from './Card.js';
 import List from './List.js';
 import STORE from './store.js';
 import './App.css';
@@ -13,7 +12,7 @@ class App extends Component {
           <header className="App-header">
             <h1>Trelloyes!</h1>
           </header>
-          <div className="App-List">
+          <div className="App-list">
             {STORE.lists.map(list => (
               <List 
                 key={list.id}
